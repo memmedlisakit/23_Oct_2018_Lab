@@ -1,0 +1,26 @@
+﻿@using BlogezyApp.Models;
+@model Post;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-xl-12">  
+        <article class="post">
+            <div class="post-header">
+                <h2 class="post-title"><a href="#">@Model.Title</a></h2>
+                <ul class="post-meta">
+                    <li><i class="mdi mdi-calendar"></i>@Model.AddedDate.ToString("dd/MM/yyyy")</li>
+                    <li><i class="mdi mdi-tag-text-outline"></i> <a href="#">@Model.Tag</a></li>
+                    <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">@Model.Comments.ToList().Count Comments</a></li>
+                </ul>
+            </div>
+            <div class="post-preview">
+                <a href="#"><img src="~/images/blog/@Model.Image" alt="" class="img-fluid rounded"></a>
+            </div>
+            <div class="post-content">
+                <p>@Model.Details</p>
+            </div> 
+        </article> 
+</div> 
+

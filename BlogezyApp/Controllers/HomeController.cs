@@ -24,12 +24,15 @@ namespace BlogezyApp.Controllers
             
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {  
-            List<Post> posts = db.Posts.ToList();
-
-            return Content(posts[0].Details);
-            return View();
+            List<Post> posts = await db.Posts.ToListAsync();
+            List<Comment> comments = await db.Comments.ToListAsync();
+            foreach (Post post in posts)
+            {
+                post.Comments = comments.Where(c => c.PostId == post.Id).ToList();
+            }
+            return View(posts);
         }
     }
 }

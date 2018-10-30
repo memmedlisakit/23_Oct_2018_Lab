@@ -23,3 +23,5 @@ E:\P503\BlogezyApp\BlogezyApp\obj\Debug\netcoreapp2.1\BlogezyApp.RazorTargetAsse
 E:\P503\BlogezyApp\BlogezyApp\obj\Debug\netcoreapp2.1\BlogezyApp.Views.pdb
 E:\P503\BlogezyApp\BlogezyApp\obj\Debug\netcoreapp2.1\BlogezyApp.csproj.CopyComplete
 E:\P503\BlogezyApp\BlogezyApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+E:\P503\BlogezyApp\BlogezyApp\obj\Debug\netcoreapp2.1\Razor\Views\DetailsPost\Index.g.cshtml.cs
+E:\P503\BlogezyApp\BlogezyApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\SideMenu\Default.g.cshtml.cs
